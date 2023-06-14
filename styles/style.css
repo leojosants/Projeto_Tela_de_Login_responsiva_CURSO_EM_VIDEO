@@ -1,8 +1,10 @@
 @charset "UTF-8";
 
 :root {
-    --colorVerde: #49a09d;
-    --colorLilas: #5f2c82;
+    --colorGreen0: #49a09d;
+    --colorGreen1: #2d6462;
+    --colorGreen2: #6cd3cf;
+    --colorLilac: #5f2c82;
     --colorWhite: #ffffff;
     --colorBoxShadowBlack: #00000073;
 }
@@ -15,7 +17,7 @@
 }
 
 body, html {
-    background-color: var(--colorLilas);
+    background-color: var(--colorLilac);
     height: 100vh;
     width: 100vw;
 }
@@ -32,8 +34,8 @@ section#login {
     left: 50%;
     overflow: hidden;
     background-color: var(--colorWhite);
-    width: 251px;
-    height: 515px;
+    width: 260px;
+    height: 525px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px var(--colorBoxShadowBlack);
     transform: translate(-50%, -50%);
@@ -43,7 +45,7 @@ section#login {
 
 section#login > div#imagem {
     display: block;
-    background: var(--colorLilas) url('../images/metal.jpg') no-repeat;
+    background: var(--colorLilac) url('../images/metal.jpg') no-repeat;
     background-size: cover;
     background-position: left bottom;
     height: 200px;
@@ -61,4 +63,57 @@ div#formulario > h1 {
 
 div#fomulario > p { 
     font-size: 0.8em; 
+}
+
+form > div.campo {
+    background-color: var(--colorLilac);
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+div.campo > label {
+    display: none;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: var(--colorGreen0);
+    color: var(--colorWhite);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* margin-top: 10px; */
+}
+
+form > input[type=submit]:hover {
+    color: var(--colorGreen1);
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: var(--colorWhite);
+    color: var(--colorGreen1);
+    border: 1px solid var(--colorGreen0);
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+form > a.botao:hover {
+    background-color: var(--colorGreen2);
+}
+
+form > a.botao > i {
+    font-size: 0.8em;
 }
