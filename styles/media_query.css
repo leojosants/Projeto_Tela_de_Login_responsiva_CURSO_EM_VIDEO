@@ -16,10 +16,13 @@
     
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    body { background-image: linear-gradient(to top, var(--colorVerde), var(--colorLilas)); }
+    body { 
+        background-image: linear-gradient(to top, var(--colorVerde), var(--colorLilas)); 
+    }
 
     section#login {
         width: 80vw;
+        height: 280px;
     }
 
     section#login > div#imagem {
@@ -36,18 +39,32 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-    body { background-image: linear-gradient(to top, var(--colorVerde), var(--colorLilas)); }
-    
-    section#login { width: 950px; }
+    body { 
+        background-image: linear-gradient(to top, var(--colorVerde), var(--colorLilas)); 
+    }
+
+    section#login {
+        width: 950px;
+        height: 350px;
+    }
 
     section#login > div#imagem {
-        float: left;
+        float: right;
         width: 50%;
         height: 100%;
     }
 
     section#login > div#formulario {
-        float: right;
+        float: left;
         width: 50%;
+    }
+
+    div#fomulario > h1 { 
+        font-size: 2em; 
+    }
+
+    div#fomulario > p { 
+        font-size: 1.2em; 
+        margin: 20px 0px;
     }
 }
